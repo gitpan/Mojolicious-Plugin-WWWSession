@@ -8,4 +8,6 @@ Revision history for Mojolicious-Plugin-WWWSession
 		More POD improvements
 0.04	2011-05-04
 		Switched from OO to TIEHASH interface
+0.05	2011-05-04
+		Removed broken after_dispatch hook
 

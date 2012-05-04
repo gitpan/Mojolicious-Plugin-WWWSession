@@ -9,11 +9,11 @@ Mojolicious::Plugin::WWWSession - Use WWWW::Session with Mojolicious
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 =head1 SYNOPSIS
@@ -172,13 +172,6 @@ sub register {
         }
     );
 
-    $app->hook(
-        after_dispatch => sub {
-            my $self = shift;
-
-            $self->stash('mojo.session')->flush;
-        }
-    );
 }
 
 
