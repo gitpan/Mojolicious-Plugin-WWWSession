@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Mojolicious-Plugin-WWWSession
-version:            0.03
+version:            0.04
 abstract:           Use WWWW::Session with Mojolicious
 author:
     - Gligan Calin Horea <gliganh@gmail.com>
