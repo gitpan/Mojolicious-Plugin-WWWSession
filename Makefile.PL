@@ -15,7 +15,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
 		'Mojolicious::Plugin' => 0,
-		'WWW::Session' => 0.07,
+		'WWW::Session' => 0.08,
 		'Digest::MD5' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

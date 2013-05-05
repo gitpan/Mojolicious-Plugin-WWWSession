@@ -7,13 +7,17 @@ use warnings;
 
 Mojolicious::Plugin::WWWSession - Use WWWW::Session with Mojolicious
 
+=head2 DESCRIPTION
+
+An alternative session implementation for Mojolicious based on WWW::Session
+
 =head1 VERSION
 
 Version 0.05
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 
 =head1 SYNOPSIS
@@ -166,7 +170,7 @@ sub register {
 
             my %session;
 
-            tie %session, 'WWW::Session' , $sid, {sid => $sid};
+			tie %session, 'WWW::Session' , $sid, {sid => $sid}, $args->{expires};
 
             $self->stash('mojo.session' => \%session);
         }
@@ -178,6 +182,8 @@ sub register {
 =head1 AUTHOR
 
 Gligan Calin Horea, C<< <gliganh at gmail.com> >>
+
+Also thanks to Florian Adamsky for contributting with patches.
 
 =head1 BUGS
 
